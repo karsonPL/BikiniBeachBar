@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
 
-        /*Intent intent = new Intent(this, Oferta.class);
+        /*Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);
         finish();*/
 
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btnMenu:
 
                 //movieViewFromLeftHide(btnMenu, 50);
-                Intent intent = new Intent(this, Oferta.class);
+                Intent intent = new Intent(this, MenuActivity.class);
                 startActivity(intent);
 
                 break;

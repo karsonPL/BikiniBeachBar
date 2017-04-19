@@ -1,6 +1,8 @@
 package co.gostyn.karson.bikinibeachbar;
 
 import android.content.Context;
+import android.util.Log;
+
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -10,45 +12,50 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
 
+import static android.content.ContentValues.TAG;
+
 /**
  * Created by karol on 2017-04-19.
  */
 
-public class Menu implements Serializable {
+public class MenuObject implements Serializable {
     private String nazwa;
     private String opis;
     private String cena;
     private String gfx;
 
-    public Menu() {
+    public MenuObject() {
     }
 
-    public Menu(String nazwa, String opis, String cena, String gfx) {
+    public MenuObject(String nazwa, String opis, String cena, String gfx) {
         this.nazwa = nazwa;
         this.opis = opis;
         this.cena = cena;
         this.gfx = gfx;
     }
 
-    public Menu(JSONObject jsonObject) throws JSONException {
+    public MenuObject(JSONObject jsonObject) throws JSONException {
         nazwa = jsonObject.getString("nazwa");
         opis = jsonObject.getString("opis");
         cena = jsonObject.getString("cena");
-      //  gfx = String.format("images/%s.jpg", gfx.toLowerCase());
+        String gfx_tmp = jsonObject.getString("gfx");
+        gfx = String.format("images/%s.jpg", gfx_tmp);
 
-      //  video = jsonObject.optString("video");
+        //Log.d("bbb", "BBB: " + gfx);
+
+        //  video = jsonObject.optString("video");
 
 
     }
 
     //metoda ladujaca z JSONa tablice
-    public static Menu[] loadArrayFromJson (Context context, String type) {
+    public static MenuObject[] loadArrayFromJson(Context context, String type) {
         try {
             String json = loadStringFromAssets(context, "menu.json");
             JSONObject jsonObject = new JSONObject(json);
             JSONArray jsonArray = jsonObject.getJSONArray(type);
 
-            return getMenuFromJsonArray(jsonArray);
+            return getMenuObjectFromJsonArray(jsonArray);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -57,29 +64,26 @@ public class Menu implements Serializable {
         }
 
         //jak sie nie uda to zwraca pusta tablice
-        return new Menu[0];
+        return new MenuObject[0];
     }
 
 
-    private static Menu[] getMenuFromJsonArray(JSONArray jsonArray) throws JSONException {
-        Menu[] menuObjects = new Menu[jsonArray.length()];
+    private static MenuObject[] getMenuObjectFromJsonArray(JSONArray jsonArray) throws JSONException {
+        MenuObject[] menuObjects = new MenuObject[jsonArray.length()];
 
-        for (int i = 0; i <  jsonArray.length(); i++) {
-            Menu menuObject = new Menu(jsonArray.getJSONObject(i));
+        for (int i = 0; i < jsonArray.length(); i++) {
+            MenuObject menuObject = new MenuObject(jsonArray.getJSONObject(i));
             menuObjects[i] = menuObject;
         }
         return menuObjects;
-      /*  Toast.makeText(, "", Toast.LENGTH_SHORT).show();
-        Toast.makeText(, "", Toast.LENGTH_SHORT).show();
-        Toast.makeText(, "", Toast.LENGTH_SHORT).show();
-        Toast.makeText(, "", Toast.LENGTH_SHORT).show();*/
+
     }
 
     //metoda wczytujaca plik i zwracajaca go jako String
     public static String loadStringFromAssets(Context context, String fileName) throws IOException {
         InputStream inputStream = context.getAssets().open(fileName);
 
-       //sprawdza wielkosc pliku i tworzy bufor o tym rozmiarze
+        //sprawdza wielkosc pliku i tworzy bufor o tym rozmiarze
         int size = inputStream.available();
         byte[] buffer = new byte[size];
 
@@ -121,5 +125,9 @@ public class Menu implements Serializable {
 
     public void setGfx(String gfx) {
         this.gfx = gfx;
+    }
+
+    public String getGfxPath() {
+        return String.format("file:///android_asset/%s", getGfx());
     }
 }

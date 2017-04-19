@@ -1,44 +1,54 @@
 {
-  "napoje_gorace":
-  [
+  "napoje_gorace": [
     {
-      "nazwa" : "Kawa parzona",
-      "opis" : "ml",
-      "cena" : "3,00",
-      "gfx" : "kawa"
+      "nazwa": "Kawa parzona",
+      "opis": "ml",
+      "cena": "3,00",
+      "gfx": "kawa"
     },
     {
-      "nazwa" : "Kawa z ekspresu",
-      "opis" : "ml",
-      "cena" : "5,00",
-      "gfx" : "kawa"
+      "nazwa": "Kawa z ekspresu",
+      "opis": "ml",
+      "cena": "5,00",
+      "gfx": "kawa"
     },
     {
-      "nazwa" : "Herbata",
-      "opis" : "ml",
-      "cena" : "3,00",
-      "gfx" : "herbata"
+      "nazwa": "Herbata",
+      "opis": "ml",
+      "cena": "3,00",
+      "gfx": ""
     }
   ],
-  "napoje_zimne":
-  [
+  "napoje_zimne": [
     {
-      "nazwa" : "Coca Cola",
-      "opis" : "0,2l",
-      "cena" : "4,00",
-      "gfx" : "coca-cola"
+      "nazwa": "Coca Cola",
+      "opis": "0,2l",
+      "cena": "4,00",
+      "gfx": ""
     },
     {
-      "nazwa" : "Sprite",
-      "opis" : "0,2l",
-      "cena" : "4,00",
-      "gfx" : "sprite"
+      "nazwa": "Sprite",
+      "opis": "0,2l",
+      "cena": "4,00",
+      "gfx": ""
     },
     {
-      "nazwa" : "Fanta",
-      "opis" : "0,2l",
-      "cena" : "4,00",
-      "gfx" : "fanta"
+      "nazwa": "Fanta",
+      "opis": "0,2l",
+      "cena": "4,00",
+      "gfx": ""
+    },
+    {
+      "nazwa": "Woda gazowana",
+      "opis": "0,2l",
+      "cena": "4,00",
+      "gfx": ""
+    },
+    {
+      "nazwa": "Woda niegazowana",
+      "opis": "0,2l",
+      "cena": "4,00",
+      "gfx": ""
     }
   ]
 }
