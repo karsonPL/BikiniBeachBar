@@ -1,0 +1,44 @@
+{
+  "napoje_gorace":
+  [
+    {
+      "nazwa" : "Kawa parzona",
+      "opis" : "ml",
+      "cena" : "3,00",
+      "gfx" : "kawa"
+    },
+    {
+      "nazwa" : "Kawa z ekspresu",
+      "opis" : "ml",
+      "cena" : "5,00",
+      "gfx" : "kawa"
+    },
+    {
+      "nazwa" : "Herbata",
+      "opis" : "ml",
+      "cena" : "3,00",
+      "gfx" : "herbata"
+    }
+  ],
+  "napoje_zimne":
+  [
+    {
+      "nazwa" : "Coca Cola",
+      "opis" : "0,2l",
+      "cena" : "4,00",
+      "gfx" : "coca-cola"
+    },
+    {
+      "nazwa" : "Sprite",
+      "opis" : "0,2l",
+      "cena" : "4,00",
+      "gfx" : "sprite"
+    },
+    {
+      "nazwa" : "Fanta",
+      "opis" : "0,2l",
+      "cena" : "4,00",
+      "gfx" : "fanta"
+    }
+  ]
+}
