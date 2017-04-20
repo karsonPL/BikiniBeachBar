@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorPrimaryDark"
     android:orientation="vertical">
 
     <android.support.design.widget.AppBarLayout
@@ -16,169 +16,94 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorAccent"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:navigationIcon="?attr/homeAsUpIndicator"/>
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
 
-    <!--
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp">-->
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:text="Napoje gorące:"
-        android:textColor="@color/colorAccent"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/napojeGoraceRV"
-        android:layout_width="match_parent"
-        android:layout_height="170dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        android:text="Napoje zimne:"
-        android:textColor="@color/colorAccent"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/napojeZimneRV"
-        android:layout_width="match_parent"
-        android:layout_height="170dp" />
-
-
-    <!--  <LinearLayout
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content">
-
-          <ImageView
-              android:layout_width="150dp"
-              android:layout_height="100dp"
-              android:layout_margin="5dp"
-              android:background="@color/colorAccent" />
-
-          <ImageView
-              android:layout_width="150dp"
-              android:layout_height="100dp"
-              android:layout_margin="5dp"
-              android:background="@color/colorAccent" />
-
-          <ImageView
-              android:layout_width="150dp"
-              android:layout_height="100dp"
-              android:layout_margin="5dp"
-              android:background="@color/colorAccent" />
-
-          <ImageView
-              android:layout_width="150dp"
-              android:layout_height="100dp"
-              android:layout_margin="5dp"
-              android:background="@color/colorAccent" />
-
-          <ImageView
-              android:layout_width="150dp"
-              android:layout_height="100dp"
-              android:layout_margin="5dp"
-              android:background="@color/colorAccent" />
-
-          <ImageView
-              android:layout_width="150dp"
-              android:layout_height="100dp"
-              android:layout_margin="5dp"
-              android:background="@color/colorAccent" />
-
-          <ImageView
-              android:layout_width="150dp"
-              android:layout_height="100dp"
-              android:layout_margin="5dp"
-              android:background="@color/colorAccent" />
-
-          <ImageView
-              android:layout_width="150dp"
-              android:layout_height="100dp"
-              android:layout_margin="5dp"
-              android:background="@color/colorAccent" />
-
-
-      </LinearLayout>-->
-    <!--    </HorizontalScrollView>-->
-
-    <!--<HorizontalScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp">
-
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Android Button 1" />
-
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Android Button 2" />
-
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Android Button 3" />
-
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Android Button 4" />
-        </LinearLayout>
-    </HorizontalScrollView>
-
-
-    <HorizontalScrollView
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="100dp">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#e4a526">
-
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Android Horizontal ScrollView Example Android Horizontal ScrollView Example\nAndroid Horizontal ScrollView ExampleAndroid Horizontal ScrollView Example\nAndroid Horizontal ScrollView ExampleAndroid Horizontal ScrollView Example\nAndroid Horizontal ScrollView ExampleAndroid Horizontal ScrollView Example" />
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Napoje gorące:"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/napojeGoraceRV"
+                android:layout_width="match_parent"
+                android:layout_height="170dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Napoje zimne:"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/napojeZimneRV"
+                android:layout_width="match_parent"
+                android:layout_height="170dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Fast food:"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fastFoodRV"
+                android:layout_width="match_parent"
+                android:layout_height="170dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Piwa butelkowe:"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/piwaButelkoweRV"
+                android:layout_width="match_parent"
+                android:layout_height="170dp" />
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+
         </LinearLayout>
-    </HorizontalScrollView>
+    </ScrollView>
 
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:gravity="center|bottom"
-        android:text="ViralAndroid.com"
-        android:textSize="24sp"
-        android:textStyle="bold" />-->
 </LinearLayout>
+
 

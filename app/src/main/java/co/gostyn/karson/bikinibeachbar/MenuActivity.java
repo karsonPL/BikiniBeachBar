@@ -5,19 +5,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class MenuActivity extends AppCompatActivity {
 
-    @Bind(R.id.napojeGoraceRV)
-    RecyclerView napojeGorace;
-    @Bind(R.id.napojeZimneRV)
-    RecyclerView napojeZimneRV;
     @Bind(R.id.toolbar)
     Toolbar mToolbar;
+    @Bind(R.id.napojeGoraceRV)
+    RecyclerView napojeGoraceRV;
+    @Bind(R.id.napojeZimneRV)
+    RecyclerView napojeZimneRV;
+    @Bind(R.id.fastFoodRV)
+    RecyclerView fastFoodRV;
+    @Bind(R.id.piwaButelkoweRV)
+    RecyclerView piwaButelkoweRV;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,13 +42,21 @@ public class MenuActivity extends AppCompatActivity {
 
 
         //ladowanie tablicy pjedynczej i wyswietlanie w RecycleView
-        MenuObject[] napoje_gorace = MenuObject.loadArrayFromJson(this, "napoje_gorace");
-        napojeGorace.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        napojeGorace.setAdapter(new MenuObjectsAdapter(napoje_gorace));
+        MenuObject[] napojeGorace = MenuObject.loadArrayFromJson(this, "napoje_gorace");
+        napojeGoraceRV.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        napojeGoraceRV.setAdapter(new MenuObjectsAdapter(napojeGorace));
 
-        MenuObject[] napoje_zimne = MenuObject.loadArrayFromJson(this, "napoje_zimne");
+        MenuObject[] napojeZimne = MenuObject.loadArrayFromJson(this, "napoje_zimne");
         napojeZimneRV.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        napojeZimneRV.setAdapter(new MenuObjectsAdapter(napoje_zimne));
+        napojeZimneRV.setAdapter(new MenuObjectsAdapter(napojeZimne));
+
+        MenuObject[] fastFood = MenuObject.loadArrayFromJson(this, "fast_food");
+        fastFoodRV.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        fastFoodRV.setAdapter(new MenuObjectsAdapter(fastFood));
+
+        MenuObject[] piwaButelkowe = MenuObject.loadArrayFromJson(this, "piwa_butelkowe");
+        piwaButelkoweRV.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        piwaButelkoweRV.setAdapter(new MenuObjectsAdapter(piwaButelkowe));
 
 
     }

@@ -77,7 +77,6 @@ public class MenuObjectsAdapter extends RecyclerView.Adapter<MenuObjectsAdapter.
 
            Glide.with(itemMenuGfx.getContext())
                     .load(menuObject.getGfxPath())
-
                     .into(itemMenuGfx);
 
 

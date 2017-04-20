@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private static final String TAG = "log";
+    Intent intent;
     @Bind(R.id.btnMenu)
     Button btnMenu;
     @Bind(R.id.btnWydarzenia)
@@ -66,13 +67,17 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btnMenu:
 
                 //movieViewFromLeftHide(btnMenu, 50);
-                Intent intent = new Intent(this, MenuActivity.class);
+                intent = new Intent(this, MenuActivity.class);
                 startActivity(intent);
 
                 break;
             case R.id.btnWydarzenia:
                 break;
             case R.id.btnInformacje:
+
+                intent = new Intent(this, InformacjeActivity.class);
+                startActivity(intent);
+
                 break;
             case R.id.btnZapraszamy:
                 break;

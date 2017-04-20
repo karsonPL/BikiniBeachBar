@@ -1,8 +1,6 @@
 package co.gostyn.karson.bikinibeachbar;
 
 import android.content.Context;
-import android.util.Log;
-
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -11,8 +9,6 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
-
-import static android.content.ContentValues.TAG;
 
 /**
  * Created by karol on 2017-04-19.
@@ -38,8 +34,8 @@ public class MenuObject implements Serializable {
         nazwa = jsonObject.getString("nazwa");
         opis = jsonObject.getString("opis");
         cena = jsonObject.getString("cena");
-        String gfx_tmp = jsonObject.getString("gfx");
-        gfx = String.format("images/%s.jpg", gfx_tmp);
+        //tring gfx_tmp = jsonObject.getString("gfx");
+        gfx = String.format("images/%s.jpg", jsonObject.getString("gfx"));
 
         //Log.d("bbb", "BBB: " + gfx);
 

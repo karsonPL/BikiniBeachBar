@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Bikini Beach Bar</string>
     <string name="menu">Menu</string>
+    <string name="title_activity_informacje">Bikini Beach Bar</string>
+
+    <string name="action_settings">Settings</string>
 </resources>

@@ -16,7 +16,7 @@
       "nazwa": "Herbata",
       "opis": "ml",
       "cena": "3,00",
-      "gfx": ""
+      "gfx": "herbata"
     }
   ],
   "napoje_zimne": [
@@ -24,31 +24,113 @@
       "nazwa": "Coca Cola",
       "opis": "0,2l",
       "cena": "4,00",
-      "gfx": ""
+      "gfx": "coca-cola"
     },
     {
       "nazwa": "Sprite",
       "opis": "0,2l",
       "cena": "4,00",
-      "gfx": ""
+      "gfx": "sprite"
     },
     {
       "nazwa": "Fanta",
       "opis": "0,2l",
       "cena": "4,00",
-      "gfx": ""
+      "gfx": "fanta"
     },
     {
       "nazwa": "Woda gazowana",
       "opis": "0,2l",
       "cena": "4,00",
-      "gfx": ""
+      "gfx": "woda-gazowana"
     },
     {
       "nazwa": "Woda niegazowana",
       "opis": "0,2l",
       "cena": "4,00",
-      "gfx": ""
+      "gfx": "woda-niegazowana"
+    },
+    {
+      "nazwa": "RadBull",
+      "opis": "",
+      "cena": "9,00",
+      "gfx": "redbull"
+    },
+    {
+      "nazwa": "Nestea",
+      "opis": "",
+      "cena": "6,00",
+      "gfx": "nestea"
+    },
+    {
+      "nazwa": "Tonic",
+      "opis": "",
+      "cena": "4,00",
+      "gfx": "tonic"
+    },
+    {
+      "nazwa": "Soki owocowe",
+      "opis": "0,2l",
+      "cena": "4,00",
+      "gfx": "soki"
+    }
+  ],
+  "fast_food": [
+    {
+      "nazwa": "Hot Dog",
+      "opis": "francuski",
+      "cena": "5,00",
+      "gfx": "hot-dog"
+    },
+    {
+      "nazwa": "Zapiekanka",
+      "opis": "",
+      "cena": "5,00",
+      "gfx": "zapiekanka"
+    },
+    {
+      "nazwa": "Hamburger",
+      "opis": "",
+      "cena": "6,00",
+      "gfx": "hamburger"
+    }
+  ],
+  "piwa_butelkowe": [
+    {
+      "nazwa": "Lech",
+      "opis": "0,5l",
+      "cena": "5,00",
+      "gfx": "lech"
+    },
+    {
+      "nazwa": "Tyskie",
+      "opis": "0,5l",
+      "cena": "5,00",
+      "gfx": "tyskie"
+    },
+    {
+      "nazwa": "Żubr",
+      "opis": "0,5l",
+      "cena": "5,00",
+      "gfx": "zubr"
+    },
+    {
+      "nazwa": "Redd's",
+      "opis": "0,4l",
+      "cena": "6,00",
+      "gfx": "reds"
+    },
+    {
+      "nazwa": "Książęce",
+      "opis": "0,5l",
+      "cena": "6,00",
+      "gfx": "ksiazece"
+    },
+    {
+      "nazwa": "Desperados",
+      "opis": "0,4l",
+      "cena": "7,00",
+      "gfx": "desperados"
     }
   ]
 }
