@@ -72,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
 
                 break;
             case R.id.btnWydarzenia:
+                intent = new Intent(this, WydarzeniaActivity.class);
+                startActivity(intent);
+
                 break;
             case R.id.btnInformacje:
 
@@ -80,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
 
                 break;
             case R.id.btnZapraszamy:
+                intent = new Intent(this, DrinkiActivity.class);
+                startActivity(intent);
                 break;
         }
     }

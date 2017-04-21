@@ -132,5 +132,55 @@
       "cena": "7,00",
       "gfx": "desperados"
     }
+  ],
+  "drinki": [
+    {
+      "nazwa": "Sex on the Beach",
+      "opis": "",
+      "cena": "16,00",
+      "gfx": "drink1"
+    },
+    {
+      "nazwa": "Mojito",
+      "opis": "",
+      "cena": "13,00",
+      "gfx": "drink2"
+    },
+    {
+      "nazwa": "Cosmopolitan",
+      "opis": "",
+      "cena": "13,00",
+      "gfx": "drink3"
+    },
+    {
+      "nazwa": "Caipiroska",
+      "opis": "",
+      "cena": "13,00",
+      "gfx": "drink4"
+    },
+    {
+      "nazwa": "Tequila Sunrise",
+      "opis": "",
+      "cena": "14,00",
+      "gfx": "drink5"
+    },
+    {
+      "nazwa": "Martini Dry",
+      "opis": "",
+      "cena": "13,00",
+      "gfx": "drink6"
+    },
+    {
+      "nazwa": "Blue Hawaii",
+      "opis": "",
+      "cena": "16,00",
+      "gfx": "drink7"
+    },
+    {
+      "nazwa": "Bikini",
+      "opis": "",
+      "cena": "12,00",
+      "gfx": "drink8"
+    }
   ]
 }

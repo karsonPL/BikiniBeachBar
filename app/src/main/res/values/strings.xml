@@ -4,4 +4,6 @@
     <string name="title_activity_informacje">Bikini Beach Bar</string>
 
     <string name="action_settings">Settings</string>
+    <string name="title_activity_drinki">Bikini Beach Bar - Drinki</string>
+    <string name="section_format">Drink nr: %1$d</string>
 </resources>

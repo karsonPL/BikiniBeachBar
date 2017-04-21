@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="#e3e1e6"
     android:orientation="vertical">
 
     <android.support.design.widget.AppBarLayout
@@ -15,7 +15,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorAccent"
+            android:background="?attr/colorPrimaryDark"
             app:navigationIcon="?attr/homeAsUpIndicator"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
@@ -37,13 +37,29 @@
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
-                android:text="Napoje gorące:"
-                android:textColor="@android:color/white"
+                android:text="Drinki:"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="normal" />
 
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/napojeGoraceRV"
+                android:id="@+id/drinkiRV"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Piwa butelkowe:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/piwaButelkoweRV"
                 android:layout_width="match_parent"
                 android:layout_height="170dp" />
 
@@ -54,9 +70,9 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:text="Napoje zimne:"
-                android:textColor="@android:color/white"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="normal" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/napojeZimneRV"
@@ -69,13 +85,13 @@
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
-                android:text="Fast food:"
-                android:textColor="@android:color/white"
+                android:text="Napoje gorące:"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="normal" />
 
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/fastFoodRV"
+                android:id="@+id/napojeGoraceRV"
                 android:layout_width="match_parent"
                 android:layout_height="170dp" />
 
@@ -85,21 +101,21 @@
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
-                android:text="Piwa butelkowe:"
-                android:textColor="@android:color/white"
+                android:text="Fast food:"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="normal" />
 
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/piwaButelkoweRV"
+                android:id="@+id/fastFoodRV"
                 android:layout_width="match_parent"
                 android:layout_height="170dp" />
 
             <TextView
-                android:visibility="invisible"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:visibility="invisible" />
 
         </LinearLayout>
     </ScrollView>
