@@ -11,5 +11,6 @@ public class WydarzeniaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_wydarzenia);
 
 
+
     }
 }

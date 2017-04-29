@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:background="#e3e1e6"
+     android:background="#e3e1e6"
     tools:context="co.gostyn.karson.bikinibeachbar.DrinkiActivity">
 
     <android.support.design.widget.AppBarLayout
@@ -14,13 +14,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/appbar_padding_top"
+        android:background="@color/colorPrimaryDark"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+
             app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
             app:popupTheme="@style/AppTheme.PopupOverlay">
 
@@ -30,6 +31,7 @@
             android:id="@+id/tabs"
             app:tabGravity="fill"
             app:tabMode="scrollable"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -47,6 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="@dimen/fab_margin"
+        android:visibility="invisible"
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
 </android.support.design.widget.CoordinatorLayout>

@@ -21,6 +21,8 @@
         </activity>
         <activity
             android:name=".MenuActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -40,7 +42,7 @@
         <activity
             android:name=".WydarzeniaActivity"
             android:configChanges="orientation"
-            android:label="Wydarzenia"
+            android:label="Bikini Beach Bar - Wydarzenia"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1">
@@ -50,6 +52,8 @@
         </activity>
         <activity
             android:name=".DrinkiActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
             android:label="@string/title_activity_drinki"
             android:parentActivityName=".MenuActivity"
             android:theme="@style/AppTheme">
